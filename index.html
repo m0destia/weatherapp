@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="src/styles/style.css">
+
+    <meta data-i18n="description" name="description" content="Weather app for m0destia portfolio.">
+    <meta name="keywords" content="weather, clima, m0destia, m0destia portfolio">
+    <meta name="author" content="m0destia">
+
+    <meta property="og:title" content="Weather App Demo">
+    <meta data-i18n="description" property="og:description" content="Weather app for m0destia portfolio.">
+    <meta property="og:type" content="website">
+
+    <title>Weather App Demo</title>
+</head>
+<body>
+    <div role="img" id="background_image"></div>
+    <main>
+        <section id="base">
+            <header id="title">
+                <h1 role="img" class="logo">&lt;M/&gt; <button id="language_button">EN</button></h1>
+                <span data-i18n="tooltip" class="tooltip" style="color: gray;">an m0destia demo product.<span data-i18n="tooltip-hirable" class="tooltip-hirable" style="color: gray;">not all cities are autocompleted.</span></span>
+                
+            </header>
+            <div id="display">
+
+            </div>
+            <form method="get" id="weatherform">
+                <label data-i18n="csc" for="city">City/State/Country</label>
+                <div class="dropdown-container">
+                    <input list="listed" name="city" id="city" placeholder="Ex: London">
+                    <datalist id="listed">
+                    </datalist>
+                </div>
+                <button data-i18n="submit" type="submit" id="submit">SUBMIT</button>
+            </form>
+            <footer>
+                <span role="img" class="logo">&lt;M/&gt;</span>
+                <span data-i18n="copy-reservation">&copy;m0destia 2025 - All rights reserved</span>
+                <a href="../../index.html" target="_blank">portfolio</a>
+            </footer>
+        </section>
+    </main>
+
+    <script type="module" src="src/javascript/script.js"></script>
+</body>
+</html>
