@@ -24,7 +24,7 @@ function changeLang() {
 }
 
 function loadLang() {
-    fetch(`/websites/weather_app_demo/src/lang/${lang}.json`)
+    fetch(`src/lang/${lang}.json`)
         .then(res => {
             if (!res.ok) {
                 throw new Error("File not found.")
